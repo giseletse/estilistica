@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado</title>
+  <style>
+   
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a7c2dd;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+        text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="radio"] {
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #385a7c;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+      text-align: center;
+    }
+    #pergunta1, #pergunta2, #pergunta3, #pergunta4, #pergunta5, #pergunta6, #pergunta7{
+       
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.83);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .resultado {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .resposta-correta {
+      color: rgb(22, 205, 129);
+    }
+    .resposta-incorreta {
+      color: rgb(255, 66, 66);
+    }
+  </style>
+</head>
+<body>
+ 
+  <form id="myForm">
+    <h1>Estilistica</h1>
+ 
+    <div id="pergunta1">
+      <label data-resposta-correta="e">1. (Enem 2013) Gripado, penso entre espirros em como a palavra gripe nos chegou após uma série de contágios entre línguas. Partiu da Itália em 1743 a epidemia de gripe que disseminou pela Europa, além do vírus propriamente dito, dois vocábulos virais: o italiano influenza e o francês grippe. O primeiro era um termo derivado do latim medieval influentia, que significava “influência dos astros sobre os homens”. O segundo era apenas a forma nominal do verbo gripper, isto é, “agarrar”. Supõe-se que fizesse referência ao modo violento como o vírus se apossa do organismo infectado.</br> RODRIGUES, S. “Sobre palavras”. Veja, São Paulo, 30 nov. 2011.</br> Para se entender o trecho como uma unidade de sentido, é preciso que o leitor reconheça a ligação entre seus elementos. Nesse texto, a coesão é construída predominantemente pela retomada de um termo por outro e pelo uso da elipse. O fragmento do texto em que há coesão por elipse do sujeito é:</label>
+      <label for="a1"><input type="radio" id="a1" name="resposta1" value="a"> a) "[…] a palavra gripe nos chegou após uma série de contágios entre línguas.”</label>
+      <label for="b1"><input type="radio" id="b1" name="resposta1" value="b"> b) "Partiu da Itália em 1743 a epidemia de gripe […]”.</label>
+      <label for="c1"><input type="radio" id="c1" name="resposta1" value="c"> c) "O primeiro era um termo derivado do latim medieval influentia, que significava ‘influência dos astros sobre os homens’.”</label>
+      <label for="d1"><input type="radio" id="d1" name="resposta1" value="d"> d)"O segundo era apenas a forma nominal do verbo gripper […]”.</label>
+      <label for="e1"><input type="radio" id="e1" name="resposta1" value="e"> e) "Supõe-se que fizesse referência ao modo violento como o vírus se apossa do organismo infectado.”</label>
+      <div class="resultado" id="resultado1"></div>
+      <button type="button" onclick="verificarRespostasIndividual(1, 'e')">Verificar Resposta</button>
+    </div>
+ 
+    <div id="pergunta2">
+      <label data-resposta-correta="a">2. (Enem 2013) </label>
+      <img src="https://d2q576s0wzfxtl.cloudfront.net/2017/08/08150352/questao129.enem2013-1.png" alt="">
+      <label data-resposta-correta="a">O poema de Oswald de Andrade remonta à ideia de que a
+        brasilidade está relacionada ao futebol. Quanto à questão da
+        identidade nacional, as anotações em torno dos versos
+        constituem </label>
+      <label for="a2"><input type="radio" id="a2" name="resposta2" value="a"> a) direcionamentos possíveis para uma leitura crítica de dados histórico-culturais.</label>
+      <label for="b2"><input type="radio" id="b3" name="resposta2" value="b"> b) forma clássica da construção poética brasileira.</label>
+      <label for="c2"><input type="radio" id="c2" name="resposta2" value="c"> c) rejeição à ideia do Brasil como o país do futebol.</label>
+      <label for="d2"><input type="radio" id="d2" name="resposta2" value="d">d) intervenções de um leitor estrangeiro no exercício de leitura poética</label>
+      <label for="e2"><input type="radio" id="e2" name="resposta2" value="e">e) lembretes de palavras tipicamente brasileira  substitutivas das originais.</label>
+ 
+      <div class="resultado" id="resultado2"></div>
+    <div class="centro"><button type="button" onclick="verificarRespostasIndividual(2, 'a')">Verificar Resposta</button></div>
+    </div>
+ 
+ 
+    <div id="pergunta3">
+      <label data-resposta-correta="d"> 3  (Enem 2013) Lusofonia</br>
+        apariga: s.f., fem. De rapaz: mulher nova: moça: menina;(Brasil), meretriz.,<br>
+ 
+        Escrevo um poema sobre a rapariga que esta sentada no café, em frente da chávena de café, enquanto alisa os cabelos com a mão. Mas não posso escrever este poema sobre essa rapariga porque, no brasil, a palavra rapariga não quer dizer o que ela diz em Portugal.Então, terei de escrever a mulher nova do café, a jovem do café, a menina do café, para que a reputação da pobre rapariga que alisa os cabelos com a mão, num café de Lisboa, não fique estragada para sempre quando este poema atravessar o atlântico para desembarcar no rio de janeiro. E isto tudo sem pensar em áfrica, porque aí lá terei de escrever sobre a moça do café, para evitar o tom demasiado continental da rapariga, que é uma palavra que já me esta a pôr com dores de cabeça até porque, no fundo, a única coisa que eu queria era escrever um poema sobre a rapariga do café.A solução, então, é mudar de café, e limitar-me a escrever um poema sobre aquele café onde nenhuma rapariga se pode sentar à mesa porque só servem café ao balcão.</label></br>
+        JUDICE, N , Matéria do Poema, Lisboa D. Quixote, 2008</label><br>
+       
+        O texto traz em relevo as funções metalinguística e poética. Seu caráter metalinguístico justifica-se pela</br></label>
+      <label for="a3"><input type="radio" id="a3" name="resposta3" value="a"> a) discussão da dificuldade de se fazer arte inovadora no mundo contemporâneo.</label>
+      <label for="b3"><input type="radio" id="b3" name="resposta3" value="b"> b) defesa do movimento artístico da pós-modernidade, típico do século XX.</label>
+      <label for="c3"><input type="radio" id="c3" name="resposta3" value="c"> c) abordagem de temas do cotidiano, em que a arte se volta para assuntos rotineiros.</label>
+      <label for="d3"><input type="radio" id="d3" name="resposta3" value="d"> d) tematização do fazer artístico, pela discussão do ato de construção da própria obra.</label>
+      <label for="e3"><input type="radio" id="e3" name="resposta3" value="e"> e) valorização do efeito de estranhamento causado no  público, o que faz a obra ser reconhecida. </label>
+      <div class="resultado" id="resultado3"></div>
+     <div class="centro"><button type="button" onclick="verificarRespostasIndividual(3, 'd')">Verificar Resposta</button></div>
+    </div>
+ 
+    <div id="pergunta4">
+        <label data-resposta-correta="b">4. (Enem 2013) A diva</br>
+            Vamos ao teatro, Maria José?</br>
+            Quem me dera,</br>
+            desmanchei em rosca quinze kilos de farinha,</br>
+            tou podre. Outro dia a gente vamos.</br>
+            Falou meio triste, culpada,</br>
+            e um pouco alegre por recusar com orgulho.</br>
+            TEATRO! Disse no espelho.</br>
+            TEATRO! Mais alto, desgrenhada.</br>
+            TEATRO! E os cacos voaram
+            sem nenhum aplauso</br>.
+            Perfeita.</br>
+           
+            PRADO, A. Oráculos de maio. São Paulo: Siciliano, 1999.</br>
+           
+            Os diferentes gêneros textuais desempenham funções
+            sociais diversas, reconhecidas pelo leitor com base em suas
+            características específicas, bem como na situação
+            comunicativa em que ele é produzido. Assim, o texto “A
+            diva”</br> </label>
+        <label for="a4"><input type="radio" id="a4" name="resposta4" value="a"> “a) narra um fato real vivido por Maria José.
+ 
+        <label for="b4"><input type="radio" id="b4" name="resposta3" value="b"> "b) surpreende o leitor pelo seu efeito poético.</label>
+        <label for="c4"><input type="radio" id="c4" name="resposta3" value="c"> "c) relata uma experiência teatral profissional.</label>
+        <label for="d4"><input type="radio" id="d4" name="resposta3" value="d"> "d) descreve uma ação típica de uma mulher sonhadora.</label>
+        <label for="e4"><input type="radio" id="e4" name="resposta3" value="e">"e) defende um ponto de vista relativo ao exercício teatral.</label>
+        <div class="resultado" id="resultado3"></div>
+        <button type="button" onclick="verificarRespostasIndividual(3, 'd')">Verificar Resposta</button>
+      </div>
+ 
+      <div id="pergunta5">
+        <label data-resposta-correta="b">5. (Enem 2013) Olá! Negro <br>
+            Os netos de teus mulatos e de teus cafuzos<br>
+            e a quarta e a quinta gerações de teu sangue sofredor<br>
+            tentarão apagar a tua cor!<br>
+            E as gerações dessas gerações quando apagarem<br>
+            a tua tatuagem execranda,<br>
+            não apagarão de suas almas, a tua alma, negro!<br>
+            Pai-João, Mãe-negra, Fulô, Zumbi,<br>
+            negro-fujão, negro cativo, negro rebelde<br>
+            negro cabinda, negro congo, negro ioruba, negro que foste<br>
+            para o algodão de USA<br>
+            para os canaviais do Brasil, para o tronco, para o colar de<br>
+            ferro, para a canga<br>
+            de todos os senhores do mundo;<br>
+            eu melhor compreendo agora os teus blues<br>
+            nesta hora triste da raça branca, negro!<br>
+            Olá, Negro! Olá, Negro!<br>
+            A raça que te enforca, enforca-se de tédio, negro!<br>
+            LIMA, J. Obras completas. Rio de Janeiro: Aguilar, 1958
+            (fragmento).<br>
+            O conflito de gerações e de grupos étnicos reproduz, na
+            visão do eu lírico, um contexto social assinalado por
+            </label>
+        </label>
+        <label for="a5"><input type="radio" id="a5" name="resposta5" value="a"> a) modernização dos modos de produção e consequente
+            enriquecimento dos brancos.</label>
+        <label for="b5"><input type="radio" id="b5" name="resposta5" value="b">b) preservação da memória ancestral e resistência negra à
+            apatia cultural dos brancos.</label>
+        <label for="c5"><input type="radio" id="c5" name="resposta5" value="c">c) superação dos costumes antigos por meio da
+            incorporação de valores dos colonizados.</label>
+        <label for="d5"><input type="radio" id="d5" name="resposta5" value="d">d) nivelamento social de descendentes de escravos e de
+            senhores pela condição de pobreza.</label>
+        <label for="e5"><input type="radio" id="e5" name="resposta5" value="e">e) antagonismo entre grupos de trabalhadores e lacunas de
+            hereditariedade.</label>
+        <div class="resultado" id="resultado5"></div>
+        <button type="button" onclick="verificarRespostasIndividual(5, 'x')">Verificar Resposta</button>
+        </div>
+        <div id="pergunta6">
+            <label data-resposta-correta="d">6. (Enem 2013) Até quando? <br>
+                Não adianta olhar pro céu<br>
+                Com muita fé e pouca luta<br>
+                Levanta aí que você tem muito protesto pra fazer<br>
+                E muita greve, você pode, você deve, pode crer<br>
+                Não adianta olhar pro chão<br>
+                Virar a cara pra não ver<br>
+                Se liga aí que te botaram numa cruz e só porque Jesus<br>
+                Sofreu não quer dizer que você tenha que sofrer!<br>
+                GABRIEL, O PENSADOR. “Seja você mesmo (mas não
+                seja sempre o mesmo)”. Rio de Janeiro: Sony Music, 2001
+                (fragmento).<br>
+                As escolhas linguísticas feitas pelo autor conferem ao texto</label>
+ 
+                <label for="a6"><input type="radio" id="a6" name="resposta6" value="a">a) caráter atual, pelo uso de linguagem própria da internet</label>
+                <label for="b6"><input type="radio" id="b6" name="resposta6" value="b">b) cunho apelativo, pela predominância de imagens
+                    metafóricas.</label>
+                <label for="c6"><input type="radio" id="c6" name="resposta6" value="c">c) tom de diálogo, pela recorrência de gírias.</label>
+                <label for="d6"><input type="radio" id="d6" name="resposta6" value="d">d) espontaneidade, pelo uso da linguagem coloquial</label>
+                <label for="e6"><input type="radio" id="e6" name="resposta6" value="e">e) originalidade, pela concisão da linguagem.</label>
+                <div class="resultado" id="resultado5"></div>
+                <button type="button" onclick="verificarRespostasIndividual(6, 'd')">Verificar Resposta</button>
+            </div>
+            <div id="pergunta7">
+                <label data-resposta-correta="e">7. (Enem 2010) Testes <br>
+                    Dia desses resolvi fazer um teste proposto por um
+                    site da internet. O nome do teste era tentador: “O que Freud
+                    diria de você”. Uau. Respondi a todas as perguntas e o
+                    resultado foi o seguinte: “Os acontecimentos da sua
+                    infância a marcaram até os doze anos, depois disso você
+                    buscou conhecimento intelectual para seu
+                    amadurecimento”. Perfeito! Foi exatamente o que
+                    aconteceu comigo. Fiquei radiante: eu havia realizado uma
+                    consulta paranormal com o pai da psicanálise, e ele acertou
+                    na mosca. <br>
+                    Estava com tempo sobrando, e curiosidade e algo
+                    que não me falta, então resolvi voltar ao teste e responder
+                    tudo diferente do que havia respondido antes. Marquei
+                    umas alternativas esdrúxulas, que nada tinham a ver com
+                    minha personalidade. E fui conferir o resultado, que dizia o
+                    seguinte: “Os acontecimentos da sua infância a marcaram
+                    até os 12 anos, depois disso você buscou conhecimento
+                    intelectual para seu amadurecimento”. <br>
+                    MEDEIROS, M. Doidas e santas. Porto Alegre, 2008
+                    (adaptado). <br>
+                    Quanto às influências que a internet pode exercer sobre os
+                    usuários, a autora expressa uma reação irônica no trecho:</label>
+                </label>
+                <label for="a7"><input type="radio" id="a7" name="resposta7" value="a">a) “Marquei umas alternativas esdrúxulas, que nada tinham
+                    a ver”.</label>
+                <label for="b7"><input type="radio" id="b7" name="resposta7" value="b">b) “Os acontecimentos da sua infância a marcaram até os
+                    doze anos”.</label>
+                <label for="c7"><input type="radio" id="c7" name="resposta7" value="c">c) “Dia desses resolvi fazer um teste proposto por um site
+                    da internet”.</label>
+                <label for="d7"><input type="radio" id="d7" name="resposta7" value="d">d) “Respondi a todas as perguntas e o resultado foi o
+                    seguinte”.</label>
+                <label for="e7"><input type="radio" id="e7" name="resposta7" value="e">e) “Fiquei radiante: eu havia realizado uma consulta
+                    paranormal com o pai da psicanálise”.</label>
+                <div class="resultado" id="resultado7"></div>
+                <button type="button" onclick="verificarRespostasIndividual(7, 'e')">Verificar Resposta</button>
+                </div>
+    <!-- Adicione mais perguntas conforme necessário -->
+ 
+    <button type="button" onclick="verificarRespostas()">Enviar Respostas</button>
+  </form>
+ 
+  <script>
+    function verificarRespostas() {
+      verificarRespostasIndividual(1, "e");
+      verificarRespostasIndividual(2, "a");
+      verificarRespostasIndividual(3, "d");
+      verificarRespostasIndividual(4, "b");
+      verificarRespostasIndividual(5, "b");
+      verificarRespostasIndividual(6, "d");
+      verificarRespostasIndividual(7, "e");
+      // Adicione chamadas para mais perguntas conforme necessário
+    }
+ 
+    function verificarRespostasIndividual(pergunta, respostaCorreta) {
+      const respostaSelecionada = document.querySelector(`input[name="resposta${pergunta}"]:checked`);
+      const resultadoElement = document.getElementById(`resultado${pergunta}`);
+ 
+      if (!respostaSelecionada) {
+        resultadoElement.textContent = "Por favor, preencha todas as respostas.";
+        resultadoElement.className = "resposta-incorreta";
+        return;
+      }
+ 
+      const respostaSelecionadaValue = respostaSelecionada.value;
+ 
+      if (respostaSelecionadaValue === respostaCorreta) {
+        resultadoElement.textContent = `Parabéns! A resposta está correta.`;
+        resultadoElement.className = "resposta-correta";
+      } else {
+        resultadoElement.textContent = `Infelizmente, a resposta está incorreta.`;
+        resultadoElement.className = "resposta-incorreta";
+      }
+    }
+  </script>
+ 
+</body>
+</html>
+ 
+ 
+
